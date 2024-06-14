@@ -1,8 +1,5 @@
 #include <bits/stdc++.h>
 #include <Eigen/Dense>
-#include <Eigen/Core>
-#include <Eigen/Sparse>
-#include <tuple>
 
 using namespace std;
 using namespace Eigen;
@@ -76,11 +73,6 @@ tuple<int, VectorXd> gaussseidel(MatrixXd A, MatrixXd b, double tol=1e-6){
 }
 
 int main(){
-    Matrix4d A2;
-    A2 << 7,2,4,4,
-        6,8,1,4,
-        2,-5,10,4,
-        4,4,4,4;
     Matrix3d A1;
     A1 << 7,2,4,
         6,8,1,
@@ -88,8 +80,13 @@ int main(){
     Vector3d b1;
     b1 << 23,25,22;
 
-
-    VectorXd b2;
+    Matrix<double,5,5> A2;
+    A2 << 18,3,2,4,2,
+        4,22,3,4,5,
+        5,2,13,4,1,
+        1,1,4,12,5,
+        3,4,2,1,13;
+    Vector<double,5> b2;
     b2 << -78,25,32,10,-37;
 
     double tol = 1e-6;
