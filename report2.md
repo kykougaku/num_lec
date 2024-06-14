@@ -1,3 +1,6 @@
+# レポート2
+37246185　金井優輝
+## ライブラリ
 このプログラムではc++向けの行列演算ライブラリであるEigenを使用しています。
 まず最初にEigenをインストールします。
 ```
@@ -6,9 +9,10 @@ sudo apt install libeigen3-dev
 
 次に以下のコマンドでコンパイルしてください。
 ```
-g++ -I /usr/include/eigen3/ main.cpp
+g++ -I /usr/include/eigen3/ repo2.cpp
 ```
 
+## 実行結果
 実行結果は以下の通りです。
 ```
 $ ./a.out
